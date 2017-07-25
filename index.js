@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const Alexa     = require('alexa-sdk');
 const reddit    = require('./modals/reddit'); 
 
