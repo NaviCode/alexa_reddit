@@ -12,8 +12,8 @@ var handlers = {
         this.emit(':ask', 'Welcome to Reddit!');
     },
     "RedditJoke": function(){
-        this.emit(":tell", "Reddit joke!")
-    },
+        reddit.get_joke(this);
+    },  
     'AMAZON.StopIntent': function() {
         // State Automatically Saved with :tell
         this.emit(':tell', `Goodbye.`);
