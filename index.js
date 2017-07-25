@@ -11,8 +11,8 @@ var handlers = {
     'LaunchRequest': function() {
         this.emit(':ask', 'Welcome to Reddit!');
     },
-    'StartGame': function(){
-        reddit.get_joke(this);
+    "RedditJoke": function(){
+        this.emit(":tell", "Reddit joke!")
     },
     'AMAZON.StopIntent': function() {
         // State Automatically Saved with :tell
