@@ -22,7 +22,7 @@ const reddit = {
                 if(i == jokes.length -1){
                     // HAVE ALEXA RECITE ONE RANDOM JOKE HAHAHA
                     let random = Math.ceil(Math.random() * 100)
-                    alexa.emit(":tell",joke_box[random].title + "......" + joke_box[random].joke);
+                    alexa.emit(":tell",joke_box[random].title  + "<break time='1s'/>" + joke_box[random].joke);
                 }
             }
         });
